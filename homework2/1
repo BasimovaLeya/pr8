@@ -1,1 +1,13 @@
+while True:
+    try:
+        number1_str = input("Введите первое целое число: ")
+        number2_str = input("Введите второе целое число: ")
 
+        number1 = int(number1_str)  
+        number2 = int(number2_str)  
+
+        summ = number1 + number2
+        print(f"Сумма чисел: {summ}")
+
+    except ValueError:
+        print("Ошибка ввода! Введите целые числа.")  
