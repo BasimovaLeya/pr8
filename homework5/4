@@ -1,0 +1,21 @@
+def summ():
+
+    total = 0
+    while True:
+        user_input = input("Введите число (либо же 'stop' или 'end' для завершения программы): ")
+
+        try:
+            number = float(user_input)  
+            total += number
+        except ValueError:
+            if user_input.lower() == "stop" or user_input.lower() == "end":
+                break  
+            else:
+                print("Неверный ввод! Пожалуйста, введите число или 'stop'/'end'.")
+                continue  
+
+    print(f"Сумма введённых чисел: {total}")
+
+if __name__ == "__main__":
+    summ()
+
