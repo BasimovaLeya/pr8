@@ -1,0 +1,27 @@
+def print_num(a, b):
+    try:
+        a = int(a)
+        b = int(b)
+
+        start = min(a, b)
+        end = max(a, b)
+
+        for i in range(start, end + 1):
+            print(i)
+
+    except ValueError:
+        print("Ошибка ввода: Введите целые числа.")
+   
+
+
+
+while True:
+    try:
+        a = input("Введите первое целое число: ")
+        b = input("Введите второе целое число: ")
+        print_num(a,b)
+        break 
+    except KeyboardInterrupt:
+        print("\nПрограмма прервана пользователем.")
+        break  
+
