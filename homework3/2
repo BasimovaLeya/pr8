@@ -1,0 +1,10 @@
+def draw_square():
+
+    for t in range(10):
+        if t == 0 or t == 9:  
+            print("*" * 10)
+        else:
+            print("*" + " " * 8 + "*") 
+
+
+draw_square()
